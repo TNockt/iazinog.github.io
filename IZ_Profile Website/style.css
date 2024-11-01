@@ -1,0 +1,301 @@
+/*----------fonts----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+/*----------géneral----------*/
+
+* {
+    font-family: 'Oswald', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+}
+
+
+/*---------- Page Principale ----------*/
+
+.home {
+    width: 100%;
+    height: 100vh;
+}
+
+.home-content {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-img img {
+    width: 30vw;
+    height: auto;
+    border-radius: 50%;
+    border: 6px solid #0092a2;
+    box-shadow: 0 0 15px 5px rgba(0, 146, 162, 1);
+    margin-top: 10vh;
+    animation: float 3s ease-in-out infinite, rotate 6s linear infinite, scale 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5vh);
+    }
+}
+
+.home-text {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-text h1 {
+    font-size: 5vw;
+    font-weight: 400;
+    margin-bottom: 5vh;
+}
+
+.home-text h1 strong {
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #0092a2;
+}
+
+.home-text p {
+    font-size: 2vw;
+    font-weight: 300;
+    margin-bottom: 5vh;
+}
+
+.home-text p strong {
+    font-weight: 500;
+    color: #0092a2;
+}
+
+.cv-button {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border: 1px solid #0092a2;
+    padding: 1.6vh 4.2vh;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    background: #0092a2;
+    font-size: 2vh;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cv-button .cv-icon {
+    margin-right: 10px;
+    font-size: 2vh;
+}
+
+.cv-button:hover {
+    background: #00A261;
+    border-color: #00A261;
+    transform: scale(1.05);
+}
+
+
+/* Copyright en Pied de Page */
+
+.pied-de-page {
+    background: #ffffff;
+    padding: 30px 0;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.pied-de-page .ligne {
+    width: 100%;
+    margin: 1% 0;
+    padding: 0.6% 0;
+    color: gray;
+    font-size: 0.8em;
+}
+
+.pied-de-page .ligne a i {
+    font-size: 2em;
+    margin: 0 1%;
+}
+
+.pied-de-page .ligne a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.pied-de-page .ligne a:hover {
+    color: #0077b5;
+}
+
+
+/*---------- Les Sections ----------*/
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+.plein {
+    height: 100vh;
+    color: white;
+    background-image: url('https://wallpapers.com/images/hd/hacking-background-bryw246r4lx5pyue.jpg');
+}
+
+.moitie {
+    height: 50vh;
+    color: white;
+    background-image: url('https://wallpapers.com/images/hd/hacking-background-bryw246r4lx5pyue.jpg');
+}
+
+.mini {
+    height: 25vh;
+    color: white;
+    background-image: url('https://wallpapers.com/images/hd/hacking-background-bryw246r4lx5pyue.jpg');
+}
+
+.banniere {
+    color: #E8E8E8;
+    display: flex;
+    align-items: stretch;
+}
+
+.banniere-premiere,
+.banniere-deuxieme {
+    width: 100%;
+    z-index: -1;
+}
+
+.banniere-premiere-face,
+.banniere-deuxieme-face {
+    padding: 50px;
+    background: #222;
+}
+
+.banniere-troisieme {
+    width: 50%;
+}
+
+.banniere-troisieme-face {
+    padding: 100px 25px;
+    text-align: center;
+    background: #222;
+}
+
+.image-fond {
+    width: 50%;
+    background: url(https://ekladata.com/b1WEN4F4fitf_Ge1wVTB6ZFEXHA.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: inset 25px 0px 20px 10px rgba(0, 0, 0, 0.41);
+}
+
+.banniere-quatrieme {
+    width: 60%;
+    z-index: -1;
+}
+
+.banniere-quatrieme-face {
+    padding: 25px;
+    background: #222;
+}
+
+.image-secondaire {
+    width: 40%;
+    background: url(https://miro.medium.com/v2/resize:fit:1400/0*p8p6_icdbz1tQT99.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    section {
+        font-size: 2em;
+    }
+    .banniere {
+        flex-direction: column;
+    }
+    .banniere-troisieme,
+    .banniere-quatrieme {
+        width: 100%;
+    }
+    .image-fond,
+    .image-secondaire {
+        width: 100%;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .home-content {
+        display: block;
+    }
+    .home-img img {
+        width: 30vh;
+        border: 3px solid #0092a2;
+        box-shadow: 0 0 10px 2.5px rgba(0, 146, 162, 1);
+        margin-top: 15vh;
+    }
+    .home-text {
+        margin-top: 10vh;
+    }
+    .home-text h1 {
+        font-size: 5vh;
+    }
+    .home-text p {
+        font-size: 2.5vh;
+    }
+}
+
+@media only screen and (max-width: 350px) and (min-height: 750px) {
+    .home-text h1 {
+        font-size: 13.2vw;
+    }
+    .home-text p {
+        font-size: 5.5vw;
+    }
+}
+
+@media (max-width: 720px) {
+    .pied-de-page {
+        padding: 5%;
+    }
+    .pied-de-page .ligne a i {
+        margin: 0 3%;
+    }
+}
